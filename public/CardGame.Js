@@ -45,11 +45,11 @@ gameDeck.shuffle()
 var playerHand = new Array(5)
 var opponentHand = new Array(5)
 
-function handValue(hand) {
+/*function handValue(hand) {
     pairs = 0
     for (let i=)
 }
-
+/*
 
 
 /*for ( let i = 0 ; i < deck.length ; i=i+1 ) {
