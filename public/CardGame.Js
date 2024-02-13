@@ -29,7 +29,7 @@ class Card {
 }
 
 function createDeck() {
-    var deck= new array(52)
+    var deck= new Array(52)
     for (let i=1; i < 5; i++) {
         for (letj=1; i < 14; j++) {
             var card = Card(i,j)
