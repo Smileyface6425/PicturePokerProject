@@ -30,11 +30,13 @@ class Card {
 
 function createDeck() {
     var deck= new Array(52)
-    for (let i=1; i < 5; i++) {
-        for (letj=1; i < 14; j++) {
-            var card = Card(i,j)
+    console.log(deck)
+    for (let i=0; i < 4; i++) {
+        for (let j=0; j < 13; j++) {
+            var card = new Card(i,j)
             deck[((i*13)+j)] = card
             console.log(card)
+            console.log(deck)
         }
     }
     console.log(deck);
@@ -45,13 +47,21 @@ gameDeck.shuffle()
 var playerHand = new Array(5)
 var opponentHand = new Array(5)
 
-/*function handValue(hand) {
-    pairs = 0
-    for (let i=)
+function handValue(hand) {
+    temp = 0
+    possibleHands = new Array(20)
+    for (let i = 0; i < (length.hand - 1); i = i + 1){
+        if (hand[i].value == hand[i+1].value){
+            possibleHands[temp] = hand[i].value
+            possibleHands[temp+1] = hand[i+1].value
+            temp = temp + 2
+        }
+    }
 }
-/*
 
 
+/*firebase init emutators - to start
+  firebase emulators:start - to run the darn thing*/
 /*for ( let i = 0 ; i < deck.length ; i=i+1 ) {
     var newPlace = Math.floor(Math.random()* (deck.length-1)) + 1 
     var placeCard = deck[newPlace]

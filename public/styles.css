@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 4rem);
+    grid-template-rows: 7rem;
+    justify-content:center;
+}
+.card {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
