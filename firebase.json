@@ -9,10 +9,10 @@
   },
   "emulators": {
     "hosting": {
-      "port": 5000
+      "port": 5500
     },
     "ui": {
-      "enabled": true
+      "enabled": false
     },
     "singleProjectMode": true
   }
